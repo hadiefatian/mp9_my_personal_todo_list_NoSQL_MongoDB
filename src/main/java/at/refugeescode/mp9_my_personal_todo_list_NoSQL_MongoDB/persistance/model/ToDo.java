@@ -11,20 +11,18 @@ public class ToDo {
 
     private String name;
 
-    private Boolean check;
+    private boolean check;
 
-
-
-    public ToDo(String name, Boolean check) {
-        this.name = name;
-        this.check = check;
-    }
 
     public ToDo() {
     }
 
+    public ToDo(String name) {
+        this.name = name;
+    }
 
     public String getId() {
+
         return id;
     }
 
@@ -40,20 +38,11 @@ public class ToDo {
         this.name = name;
     }
 
-    public Boolean getCheck() {
+    public boolean isCheck() {
         return check;
     }
 
-    public void setCheck(Boolean check) {
+    public void setCheck(boolean check) {
         this.check = check;
-    }
-
-    @Override
-    public String toString() {
-        return "ToDo{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", check=" + check +
-                '}';
     }
 }
