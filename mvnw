@@ -85,7 +85,7 @@ if [ -z "$M2_HOME" ] ; then
     else
       PRG="`dirname "$PRG"`/$link"
     fi
-  done
+  check
 
   saveddir=`pwd`
 
@@ -184,7 +184,7 @@ find_maven_basedir() {
       wdir=`cd "$wdir/.."; pwd`
     fi
     # end of workaround
-  done
+  check
   echo "${basedir}"
 }
 
